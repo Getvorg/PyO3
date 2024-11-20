@@ -1,0 +1,13 @@
+[package]
+name = "password_hasher"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "password_hasher"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.6", features = ["extension-module"] }
+argon2 = "0.5.3"
+rand = "0.8.5"
